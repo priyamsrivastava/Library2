@@ -2,7 +2,7 @@ package main;
 
 import java.util.Scanner;
 
-public class Solution extends Book {
+public class Solution  {
     public static void main(String[] args) {
         final Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -14,14 +14,11 @@ public class Solution extends Book {
                 String AuthorName = sc.nextLine().trim();
                 String ISBN_NO = sc.nextLine().trim();
                 books[i] = new Book(BookName, AuthorName, ISBN_NO);
-               /* books[i].setBookName(BookName);
-                books[i].setAuthorName(AuthorName);
-                books[i].setISBN_No(ISBN_NO);
-            }*/
-            for (int i = 0; i < books.length; i++) {
-                System.out.println(books[i]);
             }
-        } else {
+                for (int i = 0; i < books.length; i++) {
+                    System.out.println(books[i]);
+                }
+            }else {
             System.out.println("N/A");
         }
         sc.close();
