@@ -11,13 +11,7 @@ public class Book {
         this.ISBN_No=ISBN_No;
     }
 
-    public String getISBN_No() {
-        return ISBN_No;
-    }
 
-    public void setISBN_No(String ISBN_No) {
-        this.ISBN_No = ISBN_No;
-    }
 
     public String getAuthorName() {
         return AuthorName;
@@ -33,5 +27,24 @@ public class Book {
 
     public void setBookName(String bookName) {
         BookName = bookName;
+    }
+
+    public String getISBN_No() {
+        return ISBN_No;
+    }
+
+    public void setISBN_No(String ISBN_No) {
+        this.ISBN_No = ISBN_No;
+    }
+
+    @Override
+    public  String toString(){
+        return "-----------------------------\n"+
+                "Book Name:\t"+getBookName() +"\n"+
+                "AuthorName:\t"+getAuthorName()+"\n"+
+                "ISBN:\t"+getISBN_No()+
+                "\n-----------------------------";
+
+
     }
 }
